@@ -1,1 +1,20 @@
-# Juggler-Config-Server
+spring:
+ application:
+   name: movie-search
+ cloud:
+   config:
+     uri: http://localhost:8891
+ data:
+   mongodb:
+     database: moviedb
+     host: localhost
+     port: "27017"
+     uri: mongodb://localhost/moviedb
+     username: ""
+
+eureka:
+ client:
+   register-with-eureka: "true"
+   fetch-registry: "true"
+   serviceUrl:
+     defaultZone: http://localhost:9090/eureka/
