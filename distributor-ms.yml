@@ -1,4 +1,6 @@
 spring:
+ application:
+   name: distributor
  data:
    mongodb:
      database: distributormovie
