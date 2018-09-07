@@ -1,6 +1,9 @@
 spring:
+ application:
+   name: screening
 
  data:
+ 
    mongodb:
      database: movie-schedule
      host: localhost
