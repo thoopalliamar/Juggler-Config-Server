@@ -1,6 +1,5 @@
 spring:
- application:
-   name: movie-schedule
+
  data:
    mongodb:
      database: movie-schedule
