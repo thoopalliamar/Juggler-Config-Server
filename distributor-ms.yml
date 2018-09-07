@@ -1,1 +1,15 @@
-# Juggler-Config-Server
+spring:
+ data:
+   mongodb:
+     database: distributormovie
+     host: localhost
+     port: "27017"
+     uri: mongodb://localhost/distributormovie
+     username: ""
+
+eureka:
+ client:
+   service-url:
+     defaultZone: http://localhost:9090/eureka
+   register-with-eureka: "true"
+   fetch-registry: "true"
