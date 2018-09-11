@@ -3,13 +3,13 @@ spring:
    name: movie-search
  cloud:
    config:
-     uri: http://localhost:8891
+     uri: http://172.23.239.108:8891
  data:
    mongodb:
      database: moviedb
      host: localhost
      port: "27017"
-     uri: mongodb://localhost/moviedb
+     uri: mongodb://172.23.239.108/moviedb
      username: ""
 
 eureka:
@@ -17,4 +17,4 @@ eureka:
    register-with-eureka: "true"
    fetch-registry: "true"
    serviceUrl:
-     defaultZone: http://localhost:9090/eureka/
+     defaultZone: http://172.23.239.116:9090/eureka/
