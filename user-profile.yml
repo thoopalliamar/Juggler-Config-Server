@@ -3,19 +3,19 @@ spring:
   data:
     mongodb:
       database: userdb
-      host: 172.23.239.108
+      host: localhost
       port: "27017"
-      uri: mongodb://172.23.239.108/userdb
+      uri: mongodb://localhost/userdb
       username: ""
   application:
     name: UserProfile
   cloud:
     config:
-      uri: http://172.23.239.116:8891
+      uri: http://localhost:8891
 eureka:
   client:
     register-with-eureka: "true"
     fetch-registry: "true"
     serviceUrl:
-      defaultZone: http://172.23.239.116:9090/eureka/
+      defaultZone: http://1localhost:9090/eureka/
 
