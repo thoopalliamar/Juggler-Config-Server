@@ -1,1 +1,10 @@
+server:
+ port: "9094"
+spring:
+ data:
+  mongodb:
+   database: event
+   host: localhost
+   port: "27017"
+   uri: mongodb://172.23.239.108/event
 
