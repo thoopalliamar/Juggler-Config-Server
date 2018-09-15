@@ -6,4 +6,9 @@ spring:
    host: localhost
    port: "27017"
    uri: mongodb://172.23.239.108/event
+management:
+ endpoints:
+  web:
+   exposure:
+    include: "*"
 
