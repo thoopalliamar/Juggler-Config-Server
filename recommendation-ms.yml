@@ -3,6 +3,8 @@ spring:
    neo4j:
      username: neo4j
      password: baby@8686
+     uri: bolt://172.23.239.108
+
  application:
    name: recommendation-ms
 eureka:
