@@ -14,3 +14,8 @@ eureka:
    fetch-registry: "true"
    service-url:
      defaultZone: http://172.23.239.116:9090/eureka
+management:
+ endpoints:
+  web:
+   exposure:
+    include: "*"
