@@ -1,0 +1,16 @@
+spring:
+application:
+  name: payment
+data:
+  mongodb:
+    database: payment
+    host: localhost
+    port: "27017"
+    uri: mongodb://172.23.239.108/payment
+    username: ""
+eureka:
+client:
+  register-with-eureka: "true"
+  fetch-registry: "true"
+  serviceUrl:
+    defaultZone: http://172.23.239.116:9090/eureka/
