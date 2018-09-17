@@ -4,7 +4,7 @@ spring:
  data:
    mongodb:
      database: distributormovie
-     host: 172.23.239.108
+     host: 10.20.1.216
      port: "27017"
      uri: mongodb://10.20.1.216/distributormovie
      username: ""
