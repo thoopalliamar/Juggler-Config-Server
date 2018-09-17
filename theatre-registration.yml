@@ -4,16 +4,16 @@ spring:
  data:
    mongodb:
      database: theatre
-     host: 172.23.239.108
+     host: 10.20.1.216
      port: "27017"
-     uri: mongodb://172.23.239.108/theatre
+     uri: mongodb://10.20.1.216/theatre
      username: ""
 eureka:
  client:
    register-with-eureka: "true"
    fetch-registry: "true"
    service-url:
-     defaultZone: http://172.23.239.116:9090/eureka
+     defaultZone: http://localhost:9090/eureka
 management:
  endpoints:
   web:
