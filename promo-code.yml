@@ -1,1 +1,32 @@
-
+spring:
+ application:
+   name: promocodes
+ cloud:
+   config:
+     uri: http://172.23.239.116:8891
+ data:
+   mongodb:
+     database: promocode
+     host: localhost
+     port: "27017"
+     uri: mongodb://172.23.239.108/promocode
+server:
+ port: "9096"
+eureka:
+ client:
+   register-with-eureka: "true"
+   fetch-registry: "true"
+   serviceUrl:
+     defaultZone: http://172.23.239.116:9090/eureka/
+logging:
+ level:
+   org:
+     springframework:
+       web: ERROR
+   com:
+     stackroute:
+       juggler: DEBUG
+ file: logs
+ pattern:
+   file: '%d{yyyy-MMM-dd HH:mm:ss.SSS} %-5level [%thread] %logger{15} - %msg%n'
+   console: '%d{dd-MM-yyyy HH:mm:ss.SSS} %magenta([%thread]) %highlight(%-5level) %logger.%M - %msg%n'
