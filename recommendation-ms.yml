@@ -18,3 +18,4 @@ management:
   web:
    exposure:
     include: "*"
+bootstrap-id : 10.20.1.16:9092
