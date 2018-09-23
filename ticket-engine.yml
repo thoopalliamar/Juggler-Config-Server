@@ -20,6 +20,7 @@ spring:
       port: "27017"
       uri: "mongodb://10.20.1.216/booking"
       username: ""
+bootstrap-id : 10.20.1.16:9092
 
       
       
