@@ -5,7 +5,7 @@ spring:
       database: userdb
       host: localhost
       port: "27017"
-      uri: mongodb://10.20.1.216/userdb
+      uri: mongodb://localhost/userdb
       username: ""
   application:
     name: UserProfile
