@@ -18,20 +18,13 @@ spring:
   data: 
     mongodb: 
       database: booking
-      host: 13.127.22.78
+      host: localhost
       port: "27017"
-      uri: mongodb://13.127.22.78/booking
+      uri: mongodb://localhost/booking
       username: ""
       
     redis:
       repositories:
         enabled: "true"
         
-  redis:
-    host: localhost
-
-    ssl: 'true'
-    port: "6379"
-
-
-#bootstrap-id : 10.20.1.16:9092
+ 
