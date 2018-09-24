@@ -1,35 +1,37 @@
---- 
+
 eureka: 
   client: 
-    fetch-registry: "true"
     register-with-eureka: "true"
+    fetch-registry: "true"
     serviceUrl: 
-      defaultZone: "http://localhost:9083/eureka/"
+      defaultZone: http://localhost:9083/eureka/
+      
 management: 
   endpoints: 
     web: 
       exposure: 
         include: "*"
+        
 spring: 
   application: 
     name: booking
   data: 
     mongodb: 
       database: booking
-      host: "10.20.1.216"
+      host: 10.20.1.216
       port: "27017"
-      uri: "mongodb://10.20.1.216/booking"
+      uri: mongodb://10.20.1.216/booking
       username: ""
-bootstrap-id : 10.20.1.16:9092
-
       
-      
-
     redis:
       repositories:
         enabled: "true"
+        
   redis:
     host: localhost
 
     ssl: 'true'
     port: "6379"
+
+
+bootstrap-id : 10.20.1.16:9092
