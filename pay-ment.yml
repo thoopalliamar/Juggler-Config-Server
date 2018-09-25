@@ -20,4 +20,4 @@ spring:
       port: "27017"
       uri: "mongodb://localhost/payment"
       username: ""
-bootstrap-id : 13.232.122.240:9092
+bootstrap-id : 10.20.1.16:9092
