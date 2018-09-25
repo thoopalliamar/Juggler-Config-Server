@@ -23,8 +23,5 @@ spring:
       uri: mongodb://localhost/booking
       username: ""
       
-    redis:
-      repositories:
-        enabled: "true"
         
  
