@@ -17,7 +17,7 @@ eureka:
    register-with-eureka: "true"
    fetch-registry: "true"
    serviceUrl:
-     defaultZone: http://localhost:9083/eureka/
+     defaultZone: http://10.20.1.216:9083/eureka/
 logging:
  level:
    org:
